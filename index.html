@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tongue – Hacker News Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header class="app-header">
+    <div class="container">
+      <h1 class="logo">Tongue</h1>
+      <p class="subtitle">Pillole di attualità tech direttamente da Hacker News.</p>
+      <p class="mission">Contenuti rapidi, chiari e pratici per restare aggiornati sul mondo della tecnologia.</p>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <div class="container">
+
+      <h2>Ultime news</h2>
+      <p class="controls-description">
+        Allo startup vengono mostrate le ultime 10 news. Usa il pulsante
+        <strong>Carica altre notizie</strong> per caricare le successive.
+      </p>
+
+      <section id="status" class="status"></section>
+      <section id="news-list" class="news-list"></section>
+
+      <div class="load-more-wrapper">
+        <button id="load-more-btn" class="btn-load-more">Carica altre notizie</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">
+      <p>
+        Progetto Tongue – Hacker News Feed – Sviluppato da Andrea Treccani
+      </p>
+    </div>
+  </footer>
+
+  <!-- IMPORTANTISSIMO: in questo ordine -->
+  <script src="./js/api.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
